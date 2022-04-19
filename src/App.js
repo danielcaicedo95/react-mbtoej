@@ -43,14 +43,45 @@ function Welcome(props){
 </button>
     </div>
     </div>
-  )
-}
+  );
+};
+
+function AboutMe(){
+  return(
+    <div className="sections" style={sections}>
+
+      <section id="home">
+        <h2>Home</h2>
+        <p>Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.</p>
+        </section>
+
+      <section id="About">
+        <h2>About me</h2>
+        <p>Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.</p>
+        </section>
+
+        <section id="work">
+        <h2>Work</h2>
+        <p>Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.</p>
+        </section>
+
+        <section id="contact">
+        <h2>Contact</h2>
+        <p>Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis.</p>
+        </section>
+
+
+    
+      </div>
+  );
+};
 
 export default function App() {
   return (
     <div>
       <Head />,
-      <Welcome name="Daniel Caicedo" work="Front end Developer"/>
+      <Welcome name="Daniel Caicedo" work="Front end Developer"/>,
+      <AboutMe/>
           </div>
   );
 }
@@ -92,4 +123,12 @@ const welcomeContainer={
   margin:"auto"
 
 
+}
+
+const sections={
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  width:"600px",
+  margin:"auto"
 }
